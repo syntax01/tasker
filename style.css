@@ -41,13 +41,16 @@ body {
     border-right: solid grey 1px;
 }
 
+.nav-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-header, .nav-item {
-    background-color: var(--color-white);
-    border: solid lightgrey 1px;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    cursor: pointer;
 }
 
 .nav-header {
@@ -55,7 +58,28 @@ body {
     border: solid grey 1px;
 }
 
-.tasks {
+.nav-info-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-info-button > img {
+    height: 20px;
+    width: auto;
+}
+
+.nav-item {
+    background-color: var(--color-white);
+    border: solid grey 1px;   
+    cursor: pointer;
+}
+
+.nav-item-hidden {
+    display: none;
+}
+
+#tasks {
     background-color: var(--color-white);
     padding: 10px 20px;
     display: flex;
